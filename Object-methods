@@ -1,0 +1,83 @@
+const employees = [
+  {
+    'Google': {
+      name: 'Dorothy',
+      age: 30,
+      job: 'Software Engineer'
+    }
+  },
+  {
+    'Amazon': {
+      name: 'John',
+      age: 25,
+      job: 'Product Manager'
+    }
+  },
+  {
+    'Facebook': {
+      name: 'Alice',
+      age: 35,
+      job: 'Data Analyst'
+    }
+  },
+  {
+    'Netflix': {
+      name: 'Dorothy',
+      age: 28,
+      job: 'UI Designer'
+    }
+  },
+  {
+    'Apple': {
+      name: 'Bob',
+      age: 40,
+      job: 'Software Engineer'
+    }
+  },
+  {
+    'Microsoft': {
+      name: 'Charlie',
+      age: 33,
+      job: 'Data Scientist'
+    }
+  },
+  {
+    'Tesla': {
+      name: 'Dorothy',
+      age: 27,
+      job: 'Hardware Engineer'
+    }
+  },
+  {
+    'Oracle': {
+      name: 'Eve',
+      age: 38,
+      job: 'Product Manager'
+    }
+  },
+  {
+    'IBM': {
+      name: 'Frank',
+      age: 31,
+      job: 'UI Designer'
+    }
+  },
+  {
+    'Nvidia': {
+      name: 'Grace',
+      age: 29,
+      job: 'Software Engineer'
+    }
+  }
+];
+
+const targetName = 'Dorothy';
+
+for (let i = 0; i < employees.length; i++) {
+  const obj = employees[i];
+  const companyName = Object.keys(obj)[0];
+  const employee = obj[companyName];
+  if (employee.name === targetName) {
+    console.log(`Name: ${employee.name}, Age: ${employee.age}, Job: ${employee.job}, Company: ${companyName}`);
+  }
+}
